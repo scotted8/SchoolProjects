@@ -1,0 +1,199 @@
+body {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-size: 24px;
+  font-family: 'Graphik', Helvetica, Arial, sans-serif;
+	height: 100vh;
+	display: flex;
+	flex-direction: column;
+  background: linear-gradient(318.68deg, #0f495c 0%, #0d3640 49.72%);
+  color: white;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+}
+
+ul {
+  list-style-type: none;
+  padding-left: 0px;
+  padding-top: 10px;
+  text-align: left;
+}
+
+a:hover {
+  text-decoration: none;
+  color: #fff700;
+}
+
+.stock {
+  display: flex;
+  flex-direction: column;
+  border-radius: 12px;
+  width: 250px;
+  height: 250px;
+  background-color: #343a40;
+  padding-left: 10px;
+  padding-top: 10px;
+}
+
+#player {
+	width: 313px;
+	height: 313px;
+	z-index: 100;
+	content: url('/stockLarge.png');
+  margin: .5rem auto;
+}
+
+#api-content {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr;
+	max-width: 1500px;
+	align-self: center;
+	grid-gap: 50px;
+	margin-bottom: 1rem;
+}
+
+.grid-header {
+  grid-column-start: 1;
+  grid-column-end: 5;
+  justify-self: center;
+}
+
+.grid-item {
+  text-align: center;
+}
+
+#content {
+  margin-top: 3rem;
+	width: 600px;
+	align-self: center;
+	padding: 2rem .5rem;
+	height: 225px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+  text-align: center;
+  border-radius: 12px;
+  background-color:  #343a40;
+}
+
+#content .btn {
+	background-color: #0e3843;
+  font-size: 16pt;
+  width: 90%;
+  border-radius: 12px;
+  align-self: center;
+}
+
+input {
+	margin-bottom: 1rem;
+}
+
+#reset-tom, #reset-tom:visited {
+	background-color: red;
+	color: white;
+	font-size: 14pt;
+	box-shadow: none !important;
+	margin-right: 1rem;
+}
+
+#reset-tom:hover, #reset-tom:focus {
+	font-size: 15pt;
+}
+
+.circle {
+  border-radius: 50;
+  width: 5px;
+  height: 5px;
+  background-color: pink;
+}
+
+.error {
+  color: red;
+}
+
+/* FOOTER */
+#footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: .5rem;
+	margin-top: auto;
+}
+
+
+@media screen and (max-width: 480px) {
+	#player {
+		width: 188px;
+		height: 188px;
+		content: url('/stockSmall.png');
+	}
+}
+
+@media screen and (max-width: 800px) {
+	#content {
+		width: 100%;
+		height: 267px;
+    margin-top: 1rem;
+	}
+}
+
+@media screen and (max-width: 480px) {
+	#player-wrapper {
+		padding-top: 1rem;
+	}
+}
+
+@media screen and (max-width: 736px) {
+	#house {
+		display: none;
+	}
+}
+
+@media screen and (max-width: 480px) {
+	#main-wrapper {
+		padding: 0;
+	}
+}
+
+@media screen and (max-width: 1600px) {
+	#api-content {
+		grid-template-columns: 1fr 1fr 1fr;
+		max-width: 1250px;
+	}
+
+  .grid-header {
+    grid-column-start: 1;
+    grid-column-end: 4;
+}
+
+@media screen and (max-width: 1280px) {
+	#api-content {
+		grid-template-columns: 1fr 1fr;
+		grid-gap: 25px;
+		max-width: 996px;
+	}
+
+  .grid-header {
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+
+@media screen and (max-width: 800px) {
+	#api-content {
+		grid-template-columns: 1fr;
+	}
+
+  .grid-header {
+    grid-column-start: 1;
+    grid-column-end: 2;
+}
+
+@media screen and (max-width: 1441px) {
+  ul {
+    padding-left: 25px;
+  }
+}
